@@ -1,11 +1,33 @@
+/* DELETE */
+.b {
+  border: 1px solid magenta;
+}
+
+/* Headings */
 @font-face {
   font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('woff2');
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Body */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
 }
 
 body {
-  font-family: 'Montserrat';
+  background-color: #fff;
+  color: #343a40;
+  font-family: 'Roboto';
   width: 100%;
+  margin-bottom: 60px;
+}
+h1, h2, h3, h4 {
+  font-family: 'Montserrat';
 }
 
 a {
@@ -60,4 +82,96 @@ h1 {
 h3 {
   font-size: 16px;
   padding-top: 7px;
+}
+/* end header */
+
+.profile {
+  margin-top: 120px;
+}
+
+.profile__header {
+  color: #212529;
+  padding: 0 0 24px 0;
+  text-align: left;
+
+}
+.profile__header h4 {
+  color: #212529;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #212529;
+  width: 120px;
+  padding-bottom: 5px;
+}
+
+.profile__body.container p {
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+/* end profile */
+
+.details {
+  /* border: 1px solid aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.details__left,
+.details__right {
+  /* border: 1px dashed magenta; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* width: 100%; */
+}
+.details__left h4,
+.details__right h4 {
+  color: #212529;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.details__left {
+  border-right: 1px solid #343a40;
+  border-color: #343a40;
+  width: 20%;
+  padding-right: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.details__skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.details__left-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+p.skill-item {
+  padding: 16px 0 0px 0;
+}
+/* end details left */
+
+.details__right {
+  width: 60%;
+}
+.details__right h4 {
+  padding-left: 40px;
+}
+
+.details__left-education {
+  margin-top: 60px;
+}
+
+.details__left-education h4 {
+  color: #212529;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
