@@ -6,7 +6,13 @@
 /* Headings */
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  src: url('../fonts/Montserrat-Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Black.otf') format('truetype');
   font-style: normal;
   font-weight: bold;
 }
@@ -14,20 +20,28 @@
 /* Body */
 @font-face {
   font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.ttf') format('truetype');
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 body {
   background-color: #fff;
   color: #343a40;
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   margin-bottom: 60px;
+  letter-spacing: 0.5px;
 }
 h1, h2, h3, h4 {
-  font-family: 'Montserrat';
+  font-family:Arial, Helvetica, sans-serif;
+  /* font-family: 'Montserrat'; */
 }
 
 a {
@@ -139,7 +153,7 @@ h3 {
   padding-right: 145px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .details__skills {
   display: flex;
@@ -175,3 +189,38 @@ p.skill-item {
   font-weight: 600;
   padding-bottom: 20px;
 }
+
+.education {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* end sidebar */
+
+.experience__items-item {
+  /* border: 1px solid aqua; */
+  padding-bottom: 60px;
+}
+.item-company, .item-title,
+.item-location, .item-year {
+  padding-top: 8px;
+}
+p.item-company {
+  color: #212529;
+  /* font-weight: bold; */
+  font-size: 16px;
+}
+p.item-title {
+  color: #212529;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 8px;
+}
+.item-year {
+  padding-bottom: 24px;
+}
+.item-bullets {
+  padding: 7px 0;
+}
+/* end experience */
